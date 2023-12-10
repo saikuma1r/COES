@@ -5,49 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}COES{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    
-    <nav class="nav-data">
-        
-        
-            <div>
-                <a href="/" class="icon-link">
-                    <i class="h"></i>
-                <span class="icon-h">
-                </span> 
-            </a>
-                <a href="/about" class="icon-link">
-                    <i class="a"></i>
-                <span class="icon-a">  
-                </span ></a>
-
-                <a href="/insites" class="icon-link">
-                    <i class="i"></i>
-                <span class="icon-i">
-                    <i class="fa fa-home" ></i>
-                </span ></a>
-                <a href="/data_load" class="icon-link">
-                    <i class="v"></i>
-                <span class="icon-v">
-                    <i class="fa fa-home" ></i>
-                </span></a> 
-                    <a href="/contact" class="icon-link">
-                        <i class="c"></i>
-                    <span class="icon-c">
-                        <i class="fa fa-home" ></i>
-                    </span>
-                    </a>
-                
-    
-            </div>
+<body bgcolor="white">
+    <nav>
+      <a href="/">
+        <i class="fas fa-home fa-2x"></i>
+        <span><b>Home</b></span>
+      </a>
+      <a href="/../about">
+        <i class="fas fa-info-circle fa-2x"></i>
+        <span>About</span>
+      </a>
+      <a href="/../insites">
+        <i class="fas fa-lightbulb fa-2x"></i>
+        <span>Insights</span>
+      </a>
+      <a href="/../data_load">
+        <i class="fas fa-chart-bar fa-2x"></i>
+        <span>Visualization</span>
+      </a>
+      <a href="/../contact">
+        <i class="fas  fa-envelope fa-2x"></i>
+        <span>Contact us</span>
+      </a>
     </nav>
+   
+    
     <script 
     type="text/javascript" 
      src="{{ url_for('static',filename='index.js')}}" >
 
     </script>
-
-<i class="fa fa-home" ></i>
+     {% block content %}{% endblock %}
 </body>
 </html>
