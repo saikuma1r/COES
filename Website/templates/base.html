@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}COES{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    
+    <nav class="nav-data">
+        
+        
+            <div>
+                <a href="/" class="icon-link">
+                    <i class="h"></i>
+                <span class="icon-h">
+                </span> 
+            </a>
+                <a href="/about" class="icon-link">
+                    <i class="a"></i>
+                <span class="icon-a">  
+                </span ></a>
+
+                <a href="/insites" class="icon-link">
+                    <i class="i"></i>
+                <span class="icon-i">
+                    <i class="fa fa-home" ></i>
+                </span ></a>
+                <a href="/data_load" class="icon-link">
+                    <i class="v"></i>
+                <span class="icon-v">
+                    <i class="fa fa-home" ></i>
+                </span></a> 
+                    <a href="/contact" class="icon-link">
+                        <i class="c"></i>
+                    <span class="icon-c">
+                        <i class="fa fa-home" ></i>
+                    </span>
+                    </a>
+                
+    
+            </div>
+    </nav>
+    <script 
+    type="text/javascript" 
+     src="{{ url_for('static',filename='index.js')}}" >
+
+    </script>
+
+<i class="fa fa-home" ></i>
+</body>
+</html>

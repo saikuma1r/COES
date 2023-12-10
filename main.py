@@ -1,6 +1,7 @@
+from Website import create
+app = create()
 
-class Main:
-    def __init__(self):
-        pass
-    def Work():
-        pass
+if __name__=='__main__':
+    #app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
+    

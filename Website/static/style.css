@@ -1,0 +1,97 @@
+.nav-data div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 50px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.nav-data div:hover{
+    height: auto;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    top:0;
+    left: 0;
+}
+.nav-data div:hover a{
+    text-decoration: none;
+}
+.h{
+    /* Define styles for your icon container */
+    display: inline-block;
+    width: 50px; /* Adjust width and height as needed */
+    display: inline-block;
+    background-image: url('Home.png');
+    height: 50px;
+    width: 50px;
+    background-size: cover; /* Adjust to fit the container */
+  }
+  .a{
+    /* Define styles for your icon container */
+    display: inline-block;
+    background-image: url('About.png');
+    width: 50px; /* Adjust width and height as needed */
+    height: 50px;
+    background-size: cover; /* Adjust to fit the container */
+  }
+  .i{
+    /* Define styles for your icon container */
+    display: inline-block;
+    background-image: url('Insights.png');
+    width: 50px; /* Adjust width and height as needed */
+    height: 50px;/* Replace with your image path */
+    background-size: cover; /* Adjust to fit the container */
+  }
+  .v{
+    /* Define styles for your icon container */
+    display: inline-block;
+    background-image: url('Data.png');
+    width: 50px; /* Adjust width and height as needed */
+    height: 50px;
+    background-size: cover; /* Adjust to fit the container */
+  }
+  .c{
+    /* Define styles for your icon container */
+    display: inline-block;
+    background-image: url('Contact.png');
+    width: 50px; /* Adjust width and height as needed */
+    height: 50px;
+    background-size: cover; /* Adjust to fit the container */
+  }
+
+.icon-link:hover .icon-h::after {
+  /* Styles for the text when hovering */
+  content: "Home";
+  
+  color: white;
+  
+  /* Additional styles like position, color, etc. */
+}
+.icon-link:hover .icon-a::after {
+    /* Styles for the text when hovering */
+    content: "About";
+    color: white;
+    /* Additional styles like position, color, etc. */
+  }
+.icon-link:hover .icon-i::after {
+    /* Styles for the text when hovering */
+    content: "Insights";
+    color: white;
+    /* Additional styles like position, color, etc. */
+  }
+  
+  .icon-link:hover .icon-v::after {
+    /* Styles for the text when hovering */
+    content: "Visualiztion";
+    color: white;
+    /* Additional styles like position, color, etc. */
+  }
+  .icon-link:hover .icon-c::after {
+    /* Styles for the text when hovering */
+    content: "Contact";
+    color: white;
+    /* Additional styles like position, color, etc. */
+  }
