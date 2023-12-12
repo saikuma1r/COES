@@ -1,10 +1,13 @@
 from flask import Blueprint,render_template
 import matplotlib.pyplot as plt
 import seaborn as sns
+import pandas as pd
+import numpy as np
 import io
 import base64
 
 views = Blueprint('views',__name__)
+
 @views.route('/')
 def home():
     return render_template('home.html')

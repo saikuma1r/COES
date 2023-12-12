@@ -7,12 +7,11 @@ nav{
   transition: opacity 0.3s ease;
   flex-direction: column;
   width: 65px;
-  border-top: 4px solid orange;
-  border-right: 4px solid orange;
-  border-bottom: 4px solid orange;
+  border-top: 4px solid orangered;
+  border-right: 4px solid  orangered;
+  border-bottom: 4px solid orangered;
   border-top-right-radius:30px ;
   position: fixed;
-  
   top: 0;
   left: 0;
   }

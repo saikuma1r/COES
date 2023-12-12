@@ -1,2 +1,5 @@
 {% extends "base.html" %}
 {% block title %}Visualiztion{% endblock %}
+{% block content %}
+<img src="data:image/png;base64,{{ plot_url }}" style=" float: right;"  alt="Seaborn Plot">
+{% endblock %}
