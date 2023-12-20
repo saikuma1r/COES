@@ -1,24 +1,28 @@
+body{
+    background: url('Work.png');
+}
 nav{
-  background-color: skyblue;
-  color: #000;
+  opacity: 0;
+  color: gray;
   height: 561px;
   display: flex;
   opacity:  1;
   transition: opacity 0.3s ease;
   flex-direction: column;
   width: 65px;
-  border-top: 4px solid orangered;
-  border-right: 4px solid  orangered;
-  border-bottom: 4px solid orangered;
+  border-top: 4px solid white;
+  border-right: 4px solid  white;
+  border-bottom: 4px solid white;
   border-top-right-radius:30px ;
   position: fixed;
   top: 0;
   left: 0;
   }
 
-  nav:hover{
-      background-color: white;
-      opacity: 1px;
+  nav:hover {
+      background-color: lavender;
+      color: #000;
+      opacity: 0.5;
       border-top-right-radius:30px ;
       height: 1000px;
       color: orange;
@@ -31,14 +35,14 @@ nav{
       display: none;
   }
   nav a i{
-      color: orangered;
+      color: lavender;
       padding-top: 10px;
       padding-left: 10px;
       height: 70px;
       width: 70px;
   }
   nav a:hover i{
-      color: orange;
+      color: black;
       size: 70px;
   }
  
@@ -48,13 +52,55 @@ nav{
   }
   nav:hover a span{
       display: inline-block;
-      color: orangered;
+      color: black;
       font-size: 20px;
       font-weight: bold;
       
   }
   nav:hover a:hover span{
      
-      color: orange;
+      color: black;
       
   }
+
+  /*
+ Contact  
+  */
+  form{
+    float: right;
+    margin-right: 400px;
+    margin-top: 100px;
+    display: flexbox;
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    width: 300px;
+    background-color:  123499;
+    border: 1px solid lightskyblue;
+    box-shadow: 10px 10px lightblue;
+}
+input{
+    height:30px;
+    background-color: lavender;
+    width: 235px;
+    margin: 10px;
+    opacity: 1;        
+}
+textarea{
+    resize: none;
+    margin: 10px;
+    background-color: lavender;
+    opacity: 1;
+}
+input[type=submit]{
+    align-content: center;
+    background-color: lavender;
+    color:black;
+    opacity: 1;
+}
+input[type=submit]:hover{
+    align-content: center;
+    background-color: white;
+    color: black;
+    opacity: 1;
+}

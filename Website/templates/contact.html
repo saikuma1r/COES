@@ -1,35 +1,13 @@
 {% extends "base.html" %}
 {% block title %}Contact{% endblock %}
 {% block content %}
-<style>
-    form{
-        float: right;
-        margin-right: 400px;
-        margin-top: 100px;
-        display: flexbox;
-        flex-direction: row;
-        height: auto;
-        padding: 20px;
-        width: 300px;
-        background-color: aquamarine;
-        input{
-            margin: 10px;
-            padding-left: 70px;
-        }
-        textarea{
-            resize: none;
-            margin: 10px;
-        }
-    }
-    
-</style>
 <form action="">
     <input type="text" placeholder="Name" required>
     
     <input type="email" placeholder="Email" required>
     
-    <textarea name="" id="" cols="30" rows="10" ></textarea>
+    <textarea name="" id="" cols="30" rows="10"  placeholder="Your FAQ's" required></textarea>
     
-    <input type="button" value="submit">
+    <input type="submit" value="submit">
 </form>
 {% endblock %}
