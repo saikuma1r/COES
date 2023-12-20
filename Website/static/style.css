@@ -1,6 +1,6 @@
 body{
-    background: url('blue.jpg');
-    background-size:1300px 550px;/* This ensures the image covers the entire area */
+    background: url('animation1.gif');
+    background-size:1200px 550px;/* This ensures the image covers the entire area */
 }
 nav{
   opacity: 0;
@@ -8,7 +8,7 @@ nav{
   height: 561px;
   display: flex;
   opacity:  1;
-  transition: opacity 0.3s ease;
+  transition: 0.2s ;
   flex-direction: column;
   width: 65px;
   border-top: 4px solid white;
@@ -42,15 +42,21 @@ nav{
       height: 70px;
       width: 70px;
   }
+  nav a{
+    text-decoration: none;
+    
+}
+nav:hover a i{
+    color: white;
+    size: 70px;
+}
   nav a:hover i{
       color: black;
       size: 70px;
   }
- 
-  nav a{
-      text-decoration: none;
-      
-  }
+  
+
+
   nav:hover a span{
       display: inline-block;
       color: black;
