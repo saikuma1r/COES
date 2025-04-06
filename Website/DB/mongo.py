@@ -1,6 +1,6 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-uri = "mongodb+srv://Rokkam:Rokkam00@cluster0.ppt9la2.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://Saikumar:Rokkam9%40@cluster0.0hphy.mongodb.net"
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
 # Send a ping to confirm a successful connection
@@ -9,3 +9,5 @@ try:
     print("Pinged your deployment. You successfully connected to MongoDB!")
 except Exception as e:
     print(e)
+#git config --global user.email "saikumap@gmail.com"
+#git config --global user.name "saikuma1r"
